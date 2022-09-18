@@ -1,4 +1,4 @@
-
+// способ 1
 div > span {
     display: block;
     background-color: red;
@@ -6,4 +6,10 @@ div > span {
     color: white;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+// способ 2
+// !можно любому слассу перезадать свои цвета, свойства
+.bg-primary {
+   background-color: indigo !important;
 }
