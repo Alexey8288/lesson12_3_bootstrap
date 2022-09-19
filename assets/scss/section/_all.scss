@@ -1,0 +1,31 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+// способ 1
+div>span {
+    display: block;
+    background-color: red;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+// способ 2
+// !можно любому слассу перезадать свои цвета, свойства
+.bg-primary {
+    background-color: indigo !important;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+
+    @include md {
+        grid-template-columns: 1fr;
+
+    }
+
+}

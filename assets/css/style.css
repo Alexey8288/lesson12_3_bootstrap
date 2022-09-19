@@ -1,3 +1,74 @@
+@font-face {
+  font-family: "TT Norms";
+  font-weight: bold;
+  font-style: normal;
+
+  src: url("TTNorms-Bold.eot");
+  src: local("TT Norms Bold"), local("TTNorms-Bold"), url("../fonts/TTNorms-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: "TT Norms";
+  font-weight: 500;
+  font-style: normal;
+
+  src: url("TTNorms-Medium.eot");
+  src: local("TT Norms Medium"), local("TTNorms-Medium"), url("../fonts/TTNorms-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "TT Norms";
+  font-weight: normal;
+  font-style: normal;
+
+  src: url("TTNorms-Regular.eot");
+  src: local("TT Norms Regular"), local("TTNorms-Regular"), url("../fonts/TTNorms-Regular.woff2") format("woff2");
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "TT Norms", "sans-serif";
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.container {
+  max-width: 1360px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.container-sm {
+  max-width: 1135px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 div > span {
   display: block;
 
@@ -12,4 +83,18 @@ div > span {
 
 .bg-primary {
   background-color: indigo !important;
+}
+
+.cards {
+  display: grid;
+
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+@media (max-width: 767.8px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
